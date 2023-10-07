@@ -11,6 +11,8 @@ jobs:
   test:
     environment: testing
     runs-on: ubuntu-latest
+    container: #node:16 (Can define it like this)
+      image: node:16 #Or like this
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: docker.x0aaqxh.mongodb.net
